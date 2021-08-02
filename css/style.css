@@ -1,0 +1,307 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+a{
+    text-decoration: none;
+    /* color: #333333; */
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Header */
+/* ----------------------------------------------------------------------------- */
+header{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    z-index: 9;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0,0.15,);
+    width: 100%;
+    height: 15%;
+}
+
+.logo{
+    float: left;
+    width: 40%;
+}
+
+.logo img{
+    padding: 10px;
+    padding-left: 40px;
+    height: 70px;
+    width: 70px;
+}
+
+.logo .logo_img{
+    float: left;
+}
+
+.logo .logo_text{
+    float: right;
+    margin-top: -30px;
+    margin-right: 120px;
+    font-size: 72px;
+  background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(229, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    font-size: xxx-large;
+
+}
+
+.header_menu{
+    float: right;
+    width: 20%;
+    padding-top: 2%;
+    margin-left: 2%;
+    /* margin-left: 5px; */
+}   
+
+
+.header_menu a{
+    margin-left: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.header_menu a:hover{
+    color: rgb(255, 17, 0);
+    transition: all 1s ease;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* What you get */
+/* ------------------------------------------------------------------------------ */
+
+.main_que_ans{
+    padding-top: 10%;
+    text-align: center;
+}
+
+.main_que{
+    font-size: xx-large;
+}
+.main_ans{
+    font-size: xx-large;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* items which are for sale */
+/* ------------------------------------------------------------------------------ */
+
+.box{
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0, 0,0,0.4);
+    border-radius: 10px;
+    overflow:hidden;
+    margin: 25px;
+    position: relative;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+}
+
+.slide-img{
+    height: 350px;
+    /* height: auto; */
+    position: relative;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+.type{
+	display: flex;
+	flex-direction: column;
+}
+.type a{
+	color:#222222;
+	margin: 5px 0px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding-right: 8px;
+}
+
+.price{
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: poppins;
+    letter-spacing: 0.5px;
+}
+
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 237, 11,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide-img:hover .overlay{
+    visibility: visible;
+    animation: fade 0.5s;
+}
+
+.buy-btn{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+
+.buy-btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: #ff2929;
+    transition: all ease 0.3s;
+}
+
+.overlay{
+    visibility: hidden;
+}
+
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.slider{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/* ----------------------------------------------------------------------------- */
+/* footer */
+/* ------------------------------------------------------------------------------ */
+
+/* social  */
+footer{
+    /* margin-bottom: 50px;
+    margin-left: 180px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+    text-align: center;
+}
+/* .footer{
+    margin-bottom: 50px;
+    text-align: center;
+} */
+
+footer .social{
+    text-align: center;
+}
+
+footer .social h3{
+    color: #000000;
+    font-size: 20px;
+}
+
+footer .social a{
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #000000;
+}
+
+footer .social a:hover{
+    color: #ff0000;
+}
+
+footer .contact{
+    text-align: center;
+}
+
+footer .contact h3{
+    color: #000000;
+    font-size: 20px;
+}
+
+footer .contact input{
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 9px;
+    width: 100%;
+    display: flex;
+}
+
+footer .contact input:hover{
+    color: #ff0000;
+}
+
+footer .contact .submit{
+    color: white;
+    width: 90px;
+    background-color: red;
+}
+
+.contact{
+    width: 100%;
+}
+
+.email{
+    display: flex;
+    /* width: -50% -50%; */
+    text-align: center;
+    align-items: center;
+    padding-left: 30%;
+    box-shadow: 2px 2px 60px rgba(0,0,0,0.2);
+
+}
+
+.email #email{
+    width: 500px;
+}
+
+.email #submit{
+    width: 80px;
+    color: white;
+    background-color: red;
+}
